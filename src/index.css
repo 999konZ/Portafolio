@@ -1,0 +1,49 @@
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f7f9fc;
+  --color-text: #18253b;
+  --color-muted: #52617a;
+  --color-primary: #2457d6;
+  --color-border: #dce3ee;
+  --color-error: #b42318;
+  --color-success: #176342;
+  --font-body: 'Segoe UI', system-ui, sans-serif;
+  --radius: 12px;
+  --content-width: 1100px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, textarea { font: inherit; }
+a { color: var(--color-primary); text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.25; overflow-wrap: anywhere; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); letter-spacing: -0.035em; margin-bottom: 12px; }
+h2 { font-size: 1.55rem; margin-bottom: 24px; }
+h3 { font-size: 1.1rem; margin-bottom: 10px; }
+p { overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 4px; }
+section { scroll-margin-top: 28px; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
